@@ -1,0 +1,293 @@
+html {
+  background-color: #5ba2aa;
+}
+
+body {
+  background-color: #F2F1F1;
+  overflow-x: hidden;
+}
+
+/* header */
+  
+.header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  height: 70px;
+  background-color: #5ba2aa;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #F2F1F1;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  transform: scale(1.02);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  height: 70px;
+  font-size: 32px;
+  padding: 0 18px;
+  text-decoration: none;
+  line-height: 70px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 35px 30px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+    height: 70px;
+  }
+  .header li a {
+    height: 70px;
+    padding: 0 24px;
+    line-height: 70px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/** website */
+
+.geart, .marjo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.geart img, .marjo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.geart {
+  background-image: url('/images/g.png');
+}
+
+.marjo {
+  background-image: url('/images/m.png');
+}
+
+.ampersand {
+  position: absolute;
+  left: 42%;
+  top: 40%;
+  width: 12%;
+}
+
+.g-and-m {
+  width: 100% !important;
+  position: relative;
+  padding: 64px 0;
+  background-color: #5ba2a9;
+  z-index: 10;
+}
+
+.g-and-m .row {
+  z-index: 10;
+}
+
+/* .g-and-m:before {
+  content: '';
+  position: absolute;
+  left: -500px;
+  top: 0;
+  height: 100%;
+  width: 2240px;
+  background: linear-gradient(90deg, #43848b, #5ba2aa 560px, #5ba2aa 1120px, #43848b);
+  z-index: 1;
+} */
+
+.g-and-m:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin-left: calc(-50vw + 560px);
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background: #5ba2aa;
+  z-index: 0;
+}
+
+.plant {
+  position: absolute;
+  width: 400px;
+  z-index: 100;
+  opacity: 0.85;
+}
+
+.plant1 {
+  top: -100px;
+  left: -100px;
+  width: 300px;
+}
+
+.plant2 {
+  top: 250px;
+  right: -150px;
+  transform: rotate(-15deg);
+  width: 300px;
+}
+
+.plant3 {
+  top: 700px;
+  left: -100px;
+  width: 250px;
+}
+
+.hart {
+  padding: 148px 0 96px;
+  text-align: center;
+}
+
+footer {
+  background-color: #355233;
+  padding: 48px 0;
+}
+
+footer * {
+  color: #8FB1A9 !important;
+}
+
+
+@media (min-width: 720px) {
+  .geart, .marjo {
+    margin: 0;
+  }
+  .ampersand {
+    width: 65px;
+    left: calc(50% - 70px);
+    top: calc(50% - 70px);
+  }
+
+  .g-and-m {
+    max-width: 70rem;
+    padding: 128px 0;
+  }
+
+  .plant1 {
+    top: -50px;
+    width: 425px;
+    left: -200px;
+  }
+
+  .plant2 {
+    top: 150px;
+    width: 400px;
+    right: -200px;
+  }
+
+  .plant3 {
+    top: 400px;
+    width: 300px;
+    left: -100px;
+  }
+}

@@ -2,98 +2,144 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Heeft GJ al gekakt?</title>
+  <title>Geart-Jan & Marjolein</title>
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Geart-Jan & Marjolein">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/simple-grid.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest"> -->
 
 </head>
-<body onload="showSentence()">
+<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <header class="header">
+    <!-- <a href="/" class="logo">GJ+M</a> -->
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/programma">Programma</a></li>
+      <li><a href="/rsvp">RSVP</a></li>
+      <li><a href="/location">Locatie</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="container g-and-m">
+
+    <img src="/images/plant_1.png" class="plant plant1">
+    <img src="/images/plant_2.png" class="plant plant2">
+    <img src="/images/plant_3.png" class="plant plant3">
+  
+  
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <img src="images/laaion.png" alt="Laaion" width="100">
-        <br><br>
-        <h1 style="font-weight: bold;">Koester wat je hebt.</h1>
-        <p style="font-size: 1.75rem;">
-          Nu je ouder wordt, moet je elke haar die je nog op je hoofd hebt goed in de gaten houden. Ga je ze even tellen?
-        </p>
-        <p style="font-size: 1.75rem;">
-          <!-- Neem 'n Klopfer om 't te vieren!<br> -->
-          <!-- <img src="images/klopfer.png" width="150"> -->
-        </p>
-        <!-- <p style="font-size: 1.75rem;" id="sentence"></p> -->
-
-        <!-- <p style="opacity: 0.5;">Ververs deze pagina voor meer</p> -->
-
+      <div class="col-6 geart">
+        <img src="/images/geart-jan.png">
+      </div>
+      <img src="/images/ampersand.png" class="ampersand">
+      <div class="col-6 marjo">
+        <img src="/images/marjolein.png">
       </div>
     </div>
   </div>
 
-  <script type="text/javascript">
-    function showSentence() {
-      var element = document.getElementById('sentence');
+  <div class="container">
+    <div class="row">
+      <div class="col-12 hart">
+        <img src="/images/hart.svg">
+      </div>
+    </div>
 
-      var sentences = [
-      ``,
-        `Neem intussen een Klopfer. `,
-        'Alleen maar een beetje overloop-diarree',
-        'Nog maar een beetje laxulon dan',
-        //'Nee, en dan te bedenken dat z\'n laatste echte maaltijd chili sin carne was...',
-        // 'Daar is ie veel te high voor, joh! Laaaaaiiooon.',
-        //'Nee joh, nog steeds niet. Anders had je het echt wel geroken. Zelfs in Nederland.',
-        'Dat is niet zo laaion maar check het snel weer want misschien eet hij nu wel een blokje kaas.',
-        //'Dat is niet zo laaion maar de zuster geeft nu laxeermiddel dus kom snel terug.',
-        //'Bij de eerste poging kwam er alleen nog maar lucht uit.',
-        //'MAAR er ging zojuist een zetpil in. Komt dat zien.',
-        //'Het kan echter niet lang meer duren. De spanning is om te snijden.',
-        //'Laaion? Dacht het niet. Maar je kent GJ nog niet als je denkt dat hij niet ieder moment kan gaan scheiten nu.',
-        //'Nog steeds niet. Inmiddels is het een personal best voor GJ om zolang niet te kakken. Dat is wel weer laaion.'
-      ];
+    <div class="row">
+      <div class="col-12">
+        <h1>Der hinget leafde yn de loft!</h1>
+      </div>
+    </div>
 
-      var selected = Math.floor(Math.random() * sentences.length);
-      element.innerHTML = sentences[selected];
+    <div class="row">
+      <div class="col-12">
+        <p>Op 17 juni geven wij elkaar het jawoord! Omdat je belangrijk voor ons bent, willen we je graag uitnodigen voor onze bruiloft. Vieren jullie de liefde met ons mee?</p>
 
-      if (selected === 0) {
-        var a = document.createElement('a');
-        a.setAttribute('href', 'https://youtu.be/pjqBQu0Tn14?t=75');
-        a.innerHTML = `Liggend ken je scheiten maar 't is beter als je zit.`;
-        element.appendChild(a);
-      } else if (selected === 1) {
-        var img = document.createElement('img');
-        img.setAttribute('src', 'images/klopfer.png');
-        img.setAttribute('width', '150');
-        element.appendChild(img);
-      }
-    }
-  </script>
+        <table class="schedule">
+          <tr>
+            <td>13:30</td>
+            <td>Aanvang</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td>Ceremonie</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>Proost</td>
+          </tr>
+          <tr>
+            <td>17:00</td>
+            <td>Diner</td>
+          </tr>
+          <tr>
+            <td>19:00</td>
+            <td>Taart</td>
+          </tr>
+          <tr>
+            <td>20:00</td>
+            <td>Feest</td>
+          </tr>
+        </table>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p class="big">TOT DAN!</p>
+
+        <p class="alt">Geart-Jan & Marjolein</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <h1>Geart-Jan & Marjolein</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-3">
+        This content will take up 3/12 (or 1/4) of the container
+      </div>
+      <div class="col-3">
+        This content will take up 3/12 (or 1/4) of the container
+      </div>
+      <div class="col-6">
+        This content will take up 6/12 (or 1/2) of the container
+      </div>
+    </div>
+  </div> -->
+
+  <footer>
+
+      <div class="row">
+        <div class="col-3">
+          This content will take up 3/12 (or 1/4) of the container
+        </div>
+        <div class="col-3">
+          This content will take up 3/12 (or 1/4) of the container
+        </div>
+        <div class="col-6">
+          This content will take up 6/12 (or 1/2) of the container
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
