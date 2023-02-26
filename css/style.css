@@ -186,7 +186,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .geart img, .marjo img {
