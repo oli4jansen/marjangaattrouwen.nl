@@ -32,7 +32,6 @@ body {
   top: 0;
   z-index: 10000;
   height: 70px;
-  /* background-color: #5ba2aa; */
   transition: background ease .25s;
 }
 
@@ -51,7 +50,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
-  color: #F2F1F1;
+  color: #5ba2aa;
+}
+.header:has(.menu-btn:checked) li a {
+  color: #f2f1f1;
 }
 
 /* .header li a:hover,
@@ -90,7 +92,7 @@ body {
 }
 
 .header .menu-icon .navicon {
-  background: #F2F1F1;
+  background: #5ba2aa;
   display: block;
   height: 2px;
   position: relative;
@@ -101,7 +103,7 @@ body {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #F2F1F1;
+  background: #5ba2aa;
   content: '';
   display: block;
   height: 100%;
@@ -116,6 +118,21 @@ body {
 
 .header .menu-icon .navicon:after {
   top: -5px;
+}
+
+.header.blue {
+  background-color: #5ba2aa;
+}
+.header.blue:has(.menu-btn:checked) li a {
+  color: #f2f1f1;
+}
+.header.blue .menu-icon .navicon,
+.header.blue .menu-icon .navicon:after,
+.header.blue .menu-icon .navicon:before,
+.header:has(.menu-btn:checked) .menu-icon .navicon,
+.header:has(.menu-btn:checked) .menu-icon .navicon:after,
+.header:has(.menu-btn:checked) .menu-icon .navicon:before {
+  background-color: #f2f1f1;
 }
 
 /* menu btn */
@@ -151,6 +168,7 @@ body {
 .header:has(.menu-btn:checked) {
   background-color: #5ba2a9 !important;
 }
+
 
 /* 48em = 768px */
 
@@ -294,12 +312,20 @@ body {
   color: #EF72A5;
 }
 
-h1 {
+h2 {
   font-family: 'CaslonCP';
   color: #5ba2aa;
   font-weight: 400;
   margin: 0;
   font-size: 46px;
+}
+
+h1 {
+  font-family: 'CaslonCP';
+  color: #d7a43e;
+  font-weight: 400;
+  margin: 0;
+  font-size: 62px;
 }
 
 p {
