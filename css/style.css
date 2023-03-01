@@ -123,7 +123,8 @@ body {
 .header.blue {
   background-color: #5ba2aa;
 }
-.header.blue:has(.menu-btn:checked) li a {
+.header.blue:has(.menu-btn:checked) li a,
+.header.blue li a {
   color: #f2f1f1;
 }
 .header.blue .menu-icon .navicon,
