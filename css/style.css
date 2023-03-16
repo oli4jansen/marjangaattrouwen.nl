@@ -361,9 +361,11 @@ table td {
 }
 
 table td:first-of-type {
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   padding-right: 48px;
   padding-bottom: 6px;
+  white-space: nowrap;
+  font-size: 18px;
 }
 
 footer {

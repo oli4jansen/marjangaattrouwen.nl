@@ -1,17 +1,11 @@
-function enforceFullyInvited() {
-    if (!isFullyInvited()) {
+function enforceInvited() {
+    if (!isInvited()) {
         window.location.href = '/wachtwoord';
     }
 }
 
-function enforcePartiallyInvited() {
-    if (!isFullyInvited()) {
-        window.location.href = '/wachtwoord';
-    }
-}
-
-function isPartiallyInvited() {
-    return localStorage.getItem('isPartiallyInvited') !== null || isFullyInvited();
+function isInvited() {
+    return localStorage.getItem('isPartiallyInvited') !== null || localStorage.getItem('isFullyInvited') !== null;
 }
 
 function isFullyInvited() {
@@ -23,7 +17,7 @@ function login() {
     if (password && password.value === 'feest') {
         // avondgast
         localStorage.setItem('isPartiallyInvited', true);
-        window.location.href = '/programma_feest';
+        window.location.href = '/programma';
     }
     if (password && password.value === 'ceremonie') {
         // daggast

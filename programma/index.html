@@ -28,7 +28,15 @@
 
   <script src="/scripts/password.js" type="text/javascript"></script>
   <script type="text/javascript">
-    enforceFullyInvited();
+    enforceInvited();
+
+    setTimeout(() => {
+      if (!isFullyInvited()) {
+        document.getElementById('dag-programma').remove();
+      } else {
+        document.getElementById('feest-programma').remove();
+      }
+    }, 0);
   </script>
 </head>
 <body>
@@ -55,24 +63,87 @@
 
         <p class="subtle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante quam, feugiat nec cursus at, euismod sit amet nisl. Nunc accumsan eu est vitae vestibulum. Suspendisse fringilla gravida neque a tincidunt.</p>
 
-        <!-- Hieronder begint de tabel met het volledige programma -->
-        <table id="volledig-programma">
+        <!-- Hieronder begint de tabel met het feest programma -->
+        <table id="feest-programma">
           <tr>
-            <td>13:30</td>
+            <td>19:00</td>
             <td>
-              <h4>Aanvang</h4>
-              <p class="subtle blue">Aenean rutrum, felis quis imperdiet hendrerit, augue ipsum sollicitudin justo, et maximus dolor justo vel purus.</p>
+              <h4>Ontvangst en taart</h4>
+              <p class="subtle blue">Welkom in de bruiloftstuin aan Nachtegaalslaantje 2, te Stokkum! Jullie als avondgasten worden welkom geheten met een stuk taart én een lekker drankje. Blijf je slapen op onze camping? Dan kun je ook je tent gaan opzetten.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>20:00</td>
+            <td>
+              <h4>Feest</h4>
+              <p class="subtle blue">Een band, een tent, lichtsnoeren in de bomen en al onze lievelingsmensen om ons heen: dat kan alleen maar één groot feest worden. We dansen tot we niet meer kunnen!</p>
+            </td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>
+              <h4>Ontbijt</h4>
+              <p class="subtle blue">Blijf je slapen op onze camping, of ergens in de buurt? Dan ben je natuurlijk welkom op het ontbijt. Met een koffie in de hand blikken we terug op hopelijk één van de mooiste momenten van ons leven. </p>
             </td>
           </tr>
         </table>
 
-        <!-- Hieronder begint de tabel met het gedeeltelijke programma -->
-        <table id="volledig-programma">
+        <!-- Hieronder begint de tabel met het dag programma -->
+        <table id="dag-programma">
           <tr>
-            <td>13:30</td>
+            <td>13:00 - 13:30</td>
             <td>
-              <h4>Aanvang</h4>
-              <p class="subtle blue">Aenean rutrum, felis quis imperdiet hendrerit, augue ipsum sollicitudin justo, et maximus dolor justo vel purus.</p>
+              <h4>Ontvangst</h4>
+              <p class="subtle blue">Uiterlijk 13:30 worden jullie als daggasten verwacht aan Nachtegaalslaantje 2, Stokkum (Gelderland). Moet je nog een ingewikkelde tent opzetten op onze bruiloftscamping? Kom dan gerust wat eerder! Uiterlijk 13:45 begin je aan de 15 minuten-wandeling richting het kasteel. Tip: draag geen stiletto-hakken!</p>
+            </td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td>
+              <h4>Ceremonie</h4>
+              <p class="subtle blue">Onze ceremonie vindt (bij mooi weer) plaats in de Plantage, de kasteeltuin.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>
+              <h4>Proost</h4>
+              <p class="subtle blue">We zijn getrouwd! Dat moeten we vieren: we drinken een glaasje op de voorburcht van het kasteel.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>16:30</td>
+            <td>
+              <h4>Boswandeling</h4>
+              <p class="subtle blue">Als je trouwt in zo'n mooie omgeving moeten we daar gebruik van maken. We gaan in heuse wandelende trouwstoet terug naar 't Nachtelgaalslaantje.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>17:00</td>
+            <td>
+              <h4>Diner</h4>
+              <p class="subtle blue">We schuiven in de tuin aan voor een heerlijk diner.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>19:00</td>
+            <td>
+              <h4>Taart</h4>
+              <p class="subtle blue">We heten de avondgasten welkom en zodra iedereen binnen is het natuurlijk tijd voor taart!</p>
+            </td>
+          </tr>
+          <tr>
+            <td>20:00</td>
+            <td>
+              <h4>Feest</h4>
+              <p class="subtle blue">Een band, een tent, lichtsnoeren in de bomen en al onze lievelingsmensen om ons heen: dat kan alleen maar één groot feest worden. We dansen tot we niet meer kunnen!</p>
+            </td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>
+              <h4>Ontbijt</h4>
+              <p class="subtle blue">Blijf je slapen op onze camping, of ergens in de buurt? Dan ben je natuurlijk welkom op het ontbijt. Met een koffie in de hand blikken we terug op hopelijk één van de mooiste momenten van ons leven. </p>
             </td>
           </tr>
         </table>
