@@ -1,6 +1,6 @@
 function enforceInvited() {
     if (!isInvited()) {
-        window.location.href = '/wachtwoord';
+        setTimeout(function(){ document.location.href = "/wachtwoord"; }, 0);
     }
 }
 
@@ -14,14 +14,17 @@ function isFullyInvited() {
 
 function login() {
     const password = document.getElementById('password');
-    if (password && password.value === 'feest') {
+    if (password && password.value.toLowerCase() === 'feest') {
         // avondgast
         localStorage.setItem('isPartiallyInvited', true);
-        window.location.href = '/programma';
+        setTimeout(function(){ document.location.href = "/programma"; }, 0);
+        return;
     }
-    if (password && password.value === 'ceremonie') {
+    if (password && password.value.toLowerCase() === 'ceremonie') {
         // daggast
         localStorage.setItem('isFullyInvited', true);
-        window.location.href = '/programma';
+        setTimeout(function(){ document.location.href = "/programma"; }, 0);
+        return;
     }
+    alert('Verkeerd wachtwoord, probeer het nog eens.');
 }

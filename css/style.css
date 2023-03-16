@@ -426,6 +426,7 @@ footer * {
   background: #5ba2aa0c;
   outline: none;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .password-form button {
