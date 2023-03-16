@@ -375,6 +375,39 @@ footer * {
   color: #8FB1A9 !important;
 }
 
+.password-form {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.password-form input[type=text] {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  font-size: 18px;
+
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 3px solid #5ba2aa;
+  background: #5ba2aa0c;
+  outline: none;
+  width: 100%;
+}
+
+.password-form button {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: #d7a43e;
+  border: 0;
+  color: white;
+  font-weight: 500;
+  margin: 16px auto 0;
+  font-size: 18px;
+  height: 48px;
+  cursor: pointer;
+}
 
 @media (min-width: 720px) {
   .ampersand {

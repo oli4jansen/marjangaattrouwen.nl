@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #F2F1F1;">
 <head>
 
   <meta charset="utf-8">
@@ -27,36 +27,36 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="/scripts/password.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    enforcePartiallyInvited();
-  </script>
+
 </head>
 <body>
 
-  <header class="header" id="header">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="/">Uitnodiging</a></li>
-      <li><a href="/programma">Programma</a></li>
-      <li><a href="/rsvp">RSVP</a></li>
-      <li><a href="/locatie">Locatie</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </header>
 
-  <br><br>
+  <div class="container" style="margin-top: 180px">
+    <!-- <div class="row">
+      <div class="col-12 hart">
+        <img src="/images/hart.svg" width="40">
+      </div>
+    </div> -->
 
-
-  <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Locatie</h1>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <form class="password-form" onsubmit="login(); return false">
+            <!-- <label for="wachtwoord">Wachtwoord</label> -->
+            <input type="text" id="password" placeholder="Wachtwoord...">
+            <button type="submit" id="login-button">
+              Ga door
+            </button>
+        </form>
+
       </div>
     </div>
+
+
   </div>
+
+  <br><br><br><br>
 
 
 </body>
