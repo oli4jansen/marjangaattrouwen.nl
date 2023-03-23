@@ -416,6 +416,13 @@ table td:first-of-type > *:after {
   z-index: -1;
 }
 
+@media (max-width: 720px) {
+  table td {
+    display: table-row;
+    text-align: left !important;
+  }
+}
+
 footer {
   background-color: #355233;
   padding: 48px 0;
