@@ -373,6 +373,14 @@ p.subtle {
 p.blue {
   color: #5ba2aa;
 }
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "\2665";
+    color: #ef72a5;
+}
 
 table {
   text-align: left;
