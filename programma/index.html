@@ -32,9 +32,9 @@
 
     addEventListener("DOMContentLoaded", (event) => {
       if (!isFullyInvited()) {
-        document.getElementById('dag-programma').remove();
+        document.getElementById('feest-programma').style.display = 'block';
       } else {
-        document.getElementById('feest-programma').remove();
+        document.getElementById('dag-programma').style.display = 'block';
       }
     });
   </script>
@@ -83,7 +83,7 @@
         <h1 class="dark">Programma</h1>
 
         <!-- Hieronder begint de tabel met het feest programma -->
-        <table id="feest-programma">
+        <table id="feest-programma" style="display: none">
           <tr>
             <td><span>19:00</span></td>
             <td>
@@ -108,7 +108,7 @@
         </table>
 
         <!-- Hieronder begint de tabel met het dag programma -->
-        <table id="dag-programma">
+        <table id="dag-programma" style="display: none">
           <tr>
             <td><span>13:00 - 13:30</span></td>
             <td>
