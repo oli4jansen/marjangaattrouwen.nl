@@ -30,13 +30,13 @@
   <script type="text/javascript">
     enforceInvited();
 
-    setTimeout(() => {
+    addEventListener("DOMContentLoaded", (event) => {
       if (!isFullyInvited()) {
         document.getElementById('dag-programma').remove();
       } else {
         document.getElementById('feest-programma').remove();
       }
-    }, 0);
+    });
   </script>
 
   <style>
